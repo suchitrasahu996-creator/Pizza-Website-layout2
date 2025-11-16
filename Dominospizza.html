@@ -1,49 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Domino's pizza</title>
     <style>
-        .navbar{
-            display: flex;
-            justify-content: space-between;
-            align-items: center ;
-            padding-left: 50px;
-            padding-right: 50px;
-        }
-        .navbaroption{
-            display: flex;
-            justify-content: space-between;
-            align-content: center;
-            width: 50%;
-        }
-        .navitem{
-            text-transform: uppercase;
-            font-size: 50px;
-            color:blue;
-        }
-         .downloadbutton{
-            width: 150px;
-            height: 50px;
-            background-color: red;
-            color: white;
-            border: 1px solid red;
-         }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      .navbaroption {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        width: 50%;
+      }
+      .navitem {
+        text-transform: uppercase;
+        font-size: 50px;
+        color: blue;
+      }
+      .downloadbutton {
+        width: 150px;
+        height: 50px;
+        background-color: red;
+        color: white;
+        border: 1px solid red;
+      }
+      .topsectioncontainer {
+      }
+      .gridsectioncontainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+      }
+      .menuitem {
+        border: 1px solid green;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 300px;
+        height: 250px;
+        margin: auto;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar">
-        <h1 class="websitename">Domino's Pizza</h1>
-        <div class="navbaropiton">
-            <p class="navitem">Our menu</p>
-            <P class="navitem">Domino's stories</P>
-            <p class="navitem">Gift card</p>
-            <p class="navitem">Corporate inquiry</p>
-            <p class="navitem"> conatact</p>
-        </div>
-        <button class="downloadbutton">Download App</button>
+      <h1 class="websitename">Domino's Pizza</h1>
+      <div class="navbaropiton">
+        <p class="navitem">Our menu</p>
+        <p class="navitem">Domino's stories</p>
+        <p class="navitem">Gift card</p>
+        <p class="navitem">Corporate inquiry</p>
+        <p class="navitem">conatact</p>
+      </div>
+      <button class="downloadbutton">Download App</button>
     </nav>
-    
-</body>
+    <div class="topsectioncontainer">
+      <div>Order</div>
+      <div class="gridsectioncontainer">
+        <div class="menuitem">
+          <div img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-22/Screenshot%202022-12-22%20at%208.37.04%20AM_353938.png" alt="photo1"></div>
+          <h3>VEG PIZZA</h3>
+          <p>A delight veggie lovers</p>
+          <button>VIEW ALL</button>
+        </div>
+        <div class="menuitem">
+          <div img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-22/Screenshot%202022-12-22%20at%208.37.04%20AM_353938.png"alt="photo2"></div>
+          <h3>chicken PIZZA</h3>
+          <p>A delight chicken lovers</p>
+          <button>VIEW ALL</button>
+        </div>
+        <div class="menuitem">
+          <div img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-22/Screenshot%202022-12-22%20at%208.37.04%20AM_353938.png"alt="photo3" ></div>
+          <h3>soyabean PIZZA</h3>
+          <p>A delight veggie lovers,its soft and tastier</p>
+          <button>VIEW ALL</button>
+        </div>
+        <div class="menuitem">
+          <div img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-22/Screenshot%202022-12-22%20at%208.37.04%20AM_353938.png"alt="photo4"></div>
+          <h3>VEG Pasta PIZZA</h3>
+          <p>A delight veggie lovers,its soft and tastier</p>
+          <button>VIEW ALL</button>
+        </div>
+        <div class="menuitem">
+          <div img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-22/Screenshot%202022-12-22%20at%208.37.04%20AM_353938.png"alt="photo5" ></div>
+          <h3>mushroom PIZZA</h3>
+          <p>A delight veggie lovers,its soft and tastier</p>
+          <button>VIEW ALL</button>
+        </div>
+        <div class="menuitem">
+          <div img  src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-22/Screenshot%202022-12-22%20at%208.37.04%20AM_353938.png" alt="photo6" ></div>
+          <h3>Butter chicken PIZZA</h3>
+          <p>A delight chicken lovers,its soft and tastier</p>
+          <button>VIEW ALL</button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
